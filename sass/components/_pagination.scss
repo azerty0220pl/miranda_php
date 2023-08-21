@@ -1,0 +1,10 @@
+.pagination {
+    &-text {
+        @extend .text, .text--font-3, .text--weight-2, .text--size-2, .text--align-center;
+        width: 2rem !important;
+        height: 2rem !important;
+        margin: 0.25rem !important;
+        border-radius: 0 !important;
+        line-height: 2rem;
+    }
+}
