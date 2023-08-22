@@ -113,10 +113,10 @@ body {
 .text--size-1, .title-up, .paragraph-2, .background-text, .button-text, .button, .paragraph-1, .form input::placeholder, .form textarea::placeholder {
   font-size: 14px;
 }
-.text--size-2, .title-5 span, .price-2 span, .price-1 span, .pagination-text, .logo--size-small p {
+.text--size-2, .title-5 span, .price-2, .price-1 span, .pagination-text, .logo--size-small p {
   font-size: 16px;
 }
-.text--size-3, .title-4, .price-2 {
+.text--size-3, .title-4 {
   font-size: 24px;
 }
 .text--size-4, .title-3, .price-1, .logo--size-big p {
@@ -442,7 +442,8 @@ body {
   background-color: #FCF9FF;
 }
 .room .room-content .paragraph-1, .room .room-content .form input::placeholder, .form .room .room-content input::placeholder, .room .room-content .form textarea::placeholder, .form .room .room-content textarea::placeholder {
-  width: 75%;
+  width: 50%;
+  min-width: 17.5rem;
 }
 
 .row {
@@ -1108,6 +1109,31 @@ footer.background-black {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+  }
+}
+.rooms .navigation_button {
+  background-color: #FCF9FF;
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: 0.5rem !important;
+  bottom: 0.75rem;
+  right: 2rem;
+  z-index: 15;
+}
+.rooms .navigation_button:hover {
+  background-color: #BEAD8E;
+  cursor: pointer;
+}
+.rooms .navigation_button:hover path {
+  fill: #FCF9FF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    grid-auto-rows: auto;
   }
 }
 

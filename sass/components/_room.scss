@@ -28,7 +28,8 @@
         background-color: $color-white;
 
         .paragraph-1 {
-            width: 75%;
+            width: 50%;
+            min-width: 17.5rem;
         }
     }
 }
