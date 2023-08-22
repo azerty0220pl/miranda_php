@@ -3,7 +3,7 @@
 @section('title', 'Offers')
 
 @section('content')
-    @extends('layout.home')
+    @extends('components.home')
     @section('home')
     @section('welcome', 'Our Offers')
     @parent

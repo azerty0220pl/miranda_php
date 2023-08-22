@@ -3,7 +3,7 @@
 @section('title', 'About')
 
 @section('content')
-    @extends('layout.home')
+    @extends('components.home')
     @section('home')
     @section('welcome', 'About Us')
     @parent
@@ -49,7 +49,7 @@
                 <img src="./assets/empty.png" />
             </div>
             <div class="res-content">
-                <p class="title-up text--color-grey-3">Restaurant</p>
+                <p class="title-up text--color-grey-3">RESTAURANT</p>
                 <p class="title-2 text--color-grey-5">Get Restaurant Facilities & Many Other More</p>
                 <p class="paragraph-1 text--color-grey-3">Lorem ipsum dolor sit amet, consectetur adipisicing
                     elit, sed do eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

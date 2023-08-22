@@ -132,7 +132,6 @@
                     <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
                 </div>
             </div>
-
             <div class="swiper-slide room">
                 <div class="room-img">
                     <img src="./assets/img/rooms.jpg" />
