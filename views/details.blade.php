@@ -13,7 +13,7 @@
         <p class="price-1 text--color-gold">$345<span>/Night</span></p>
         <div class="card card--wide card--margin-top card--center">
             <div class="image full">
-                <img src="./assets/img/rooms.jpg" />
+                <img src="/assets/img/rooms.jpg" />
             </div>
             <!--div class="content">
                 <p class="text text--price-2 text--align-center">Check Availability</p>
@@ -79,43 +79,43 @@
                 <div class="row">
                     <div class="column">
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/air-conditioner.svg" alt="" />
+                            <img src="/assets/icons/air-conditioner.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Air Conditioner</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/plate.svg" alt="" />
+                            <img src="/assets/icons/plate.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Breakfast</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/clean.svg" alt="" />
+                            <img src="/assets/icons/clean.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Cleaning</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/buy.svg" alt="" />
+                            <img src="/assets/icons/buy.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Grocery</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/shop.svg" alt="" />
+                            <img src="/assets/icons/shop.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Shop Near</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/teamspeak.svg" alt="" />
+                            <img src="/assets/icons/teamspeak.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">24/7 Online Support</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/security.svg" alt="" />
+                            <img src="/assets/icons/security.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Smart Security</p>
                             </div>
@@ -123,43 +123,43 @@
                     </div>
                     <div class="column">
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/wifi-alt.svg" alt="" />
+                            <img src="/assets/icons/wifi-alt.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">High Speed WiFi</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/kitchen.svg" alt="" />
+                            <img src="/assets/icons/kitchen.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Kitchen</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/bath.svg" alt="" />
+                            <img src="/assets/icons/bath.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Shower</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/bed-alt.svg" alt="" />
+                            <img src="/assets/icons/bed-alt.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Single Bed</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/towel.svg" alt="" />
+                            <img src="/assets/icons/towel.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Towels</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/key.svg" alt="" />
+                            <img src="/assets/icons/key.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Strong Locker</p>
                             </div>
                         </div>
                         <div class="entry entry--padding-small">
-                            <img src="./assets/icons/expert.svg" alt="" />
+                            <img src="/assets/icons/expert.svg" alt="" />
                             <div class="data">
                                 <p class="paragraph-1 text--color-grey-3">Expert Team</p>
                             </div>
@@ -173,8 +173,8 @@
     <section class="no-bottom">
         <div class="card card--center">
             <div class="image image--rounded">
-                <img src="./assets/empty.png" />
-                <img class="tick" src="./assets/icons/tick.svg" />
+                <img src="/assets/empty.png" />
+                <img class="tick" src="/assets/icons/tick.svg" />
             </div>
             <div class="content">
                 <p class="title-3 text--align-center text--color-grey-5">Rosalina D. Williams</p>
@@ -199,16 +199,16 @@
         <div class="swiper-wrapper">
             <div class="swiper-slide room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
@@ -220,16 +220,16 @@
             </div>
             <div class="swiper-slide room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
@@ -241,16 +241,16 @@
             </div>
             <div class="swiper-slide room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
@@ -262,16 +262,16 @@
             </div>
             <div class="swiper-slide room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>

@@ -4,8 +4,8 @@
     <head lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="../css/styles.css" />
-        <link rel="icon" href="../assets/icons/logo.svg" />
+        <link rel="stylesheet" href="/css/styles.css" />
+        <link rel="icon" href="/assets/icons/logo.svg" />
         <title>Miranda @yield('title')</title>
     </head>
     <body>
@@ -13,10 +13,10 @@
             <div class="header">
                 <div class="left-div">
                     <button class="button toggler hidden--desktop">
-                        <img class="icon" src="../assets/icons/bars.svg" />
+                        <img class="icon" src="/assets/icons/bars.svg" />
                     </button>
                     <div class="logo logo--size-small">
-                        <img src="../assets/icons/logo.svg" />
+                        <img src="/assets/icons/logo.svg" />
                         <div>
                             <p>HOTEL</p>
                             <p>MIRANDA</p>
@@ -31,10 +31,10 @@
                 </div>
                 <div>
                     <button class="button">
-                        <img class="icon" src="../assets/icons/user.svg" />
+                        <img class="icon" src="/assets/icons/user.svg" />
                     </button>
                     <button class="button">
-                        <img class="icon" src="../assets/icons/search.svg" />
+                        <img class="icon" src="/assets/icons/search.svg" />
                     </button>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                 <a class="link paragraph-2 text--color-grey5" href="/offers.php">Offers</a>
                 <a class="link paragraph-2 text--color-grey5" href="/contact.php">Contact</a>
             </div>
-            <script src="./js/menu-toggler.js"></script>
+            <script src="/js/menu-toggler.js"></script>
         </header>
 
         @yield('content')
@@ -53,7 +53,7 @@
             <div class="main-footer">
                 <div class="footer-section">
                     <div class="logo logo--size-big">
-                        <img src="../assets/icons/logo-alt.svg" />
+                        <img src="/assets/icons/logo-alt.svg" />
                         <div>
                             <p>HOTEL</p>
                             <p>MIRANDA</p>
@@ -67,15 +67,15 @@
                         exercitat ion ullamco laboris nisi.</p>
                     <div>
                         <a href="https://www.facebook.com/CubeClimb/" target="_blank"><img
-                                class="icon icon--background-grey" src="../assets/icons/facebook.svg" /></a>
+                                class="icon icon--background-grey" src="/assets/icons/facebook.svg" /></a>
                         <a href="https://twitter.com/home" target="_blank"><img class="icon icon--background-gold"
-                                src="../assets/icons/twitter.svg" /></a>
+                                src="/assets/icons/twitter.svg" /></a>
                         <a href="https://www.behance.net/ 12416256" target="_blank"><img class="icon icon--background-grey"
-                                src="../assets/icons/behance.svg" /></a>
+                                src="/assets/icons/behance.svg" /></a>
                         <a href="https://www.linkedin.com/in/szymon-kokot-b3143b26a/" target="_blank"><img
-                                class="icon icon--background-grey" src="../assets/icons/linkedin.svg" /></a>
+                                class="icon icon--background-grey" src="/assets/icons/linkedin.svg" /></a>
                         <a href="https://www.youtube.com/watch?v=6pN-lkzEmEk&ab_channel=MikeOldfield-Topic"
-                            target="_blank"><img class="icon icon--background-grey" src="../assets/icons/youtube.svg" /></a>
+                            target="_blank"><img class="icon icon--background-grey" src="/assets/icons/youtube.svg" /></a>
                     </div>
                 </div>
                 <div class="footer-section">
@@ -104,7 +104,7 @@
                             <div class="content content--height-full">
                                 <div class="entry">
                                     <div class="">
-                                        <img class="icon icon--variant-medium" src="../assets/icons/phone.svg" />
+                                        <img class="icon icon--variant-medium" src="/assets/icons/phone.svg" />
                                     </div>
                                     <div class="data">
                                         <p class="title-4 text--color-grey-5">Phone Number</p>
@@ -114,7 +114,7 @@
                                 <div class="entry">
                                     <div class="">
                                         <img class="icon icon--variant-medium" icon--variant-medium
-                                            src="../assets/icons/mail.svg" />
+                                            src="/assets/icons/mail.svg" />
                                     </div>
                                     <div class="data">
                                         <p class="title-4 text--color-grey-5">Email</p>
@@ -123,7 +123,7 @@
                                 </div>
                                 <div class="entry">
                                     <div class="">
-                                        <img class="icon icon--variant-medium" src="../assets/icons/location-alt.svg" />
+                                        <img class="icon icon--variant-medium" src="/assets/icons/location-alt.svg" />
                                     </div>
                                     <div class="data">
                                         <p class="title-4 text--color-grey-5">Hotel Address</p>

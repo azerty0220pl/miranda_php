@@ -11,16 +11,16 @@
         <div class="list">
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
@@ -36,16 +36,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
@@ -61,16 +61,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
@@ -86,16 +86,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>
@@ -111,16 +111,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
@@ -136,16 +136,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
@@ -161,16 +161,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
@@ -186,16 +186,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>
@@ -211,16 +211,16 @@
             </div>
             <div class="room">
                 <div class="room-img">
-                    <img src="./assets/img/rooms.jpg" />
+                    <img src="/assets/img/rooms.jpg" />
                 </div>
                 <div class="icons icons--margin-negative">
-                    <img class="icon" src="./assets/icons/bed.svg" />
-                    <img class="icon" src="./assets/icons/wifi.svg" />
-                    <img class="icon" src="./assets/icons/car.svg" />
-                    <img class="icon" src="./assets/icons/snow.svg" />
-                    <img class="icon" src="./assets/icons/strong.svg" />
-                    <img class="icon" src="./assets/icons/no-smoking.svg" />
-                    <img class="icon" src="./assets/icons/drink.svg" />
+                    <img class="icon" src="/assets/icons/bed.svg" />
+                    <img class="icon" src="/assets/icons/wifi.svg" />
+                    <img class="icon" src="/assets/icons/car.svg" />
+                    <img class="icon" src="/assets/icons/snow.svg" />
+                    <img class="icon" src="/assets/icons/strong.svg" />
+                    <img class="icon" src="/assets/icons/no-smoking.svg" />
+                    <img class="icon" src="/assets/icons/drink.svg" />
                 </div>
                 <div class="room-content">
                     <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
