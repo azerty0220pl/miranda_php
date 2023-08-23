@@ -7,4 +7,77 @@
     @section('home')
     @section('welcome', 'New Details')
     @parent
+    <section class="info no-bottom">
+            <div class="entry entry--margin-bottom">
+                <div class="">
+                    <img class="icon icon--variant-medium" src="/assets/icons/phone.svg" />
+                </div>
+                <div class="data">
+                    <p class="title-4">Phone Number</p>
+                    <p class="paragraph-1 text--color-grey-3">+34 644 255 923</p>
+                    <p class="background-text text--color-grey-1">01</p>
+                </div>
+            </div>
+            <div class="entry entry--margin-bottom">
+                <div class="">
+                    <img class="icon icon--variant-medium" src="/assets/icons/mail.svg" />
+                </div>
+                <div class="data">
+                    <p class="title-4">Email</p>
+                    <p class="paragraph-1 text--color-grey-3">szymonekokot@gmail.com</p>
+                    <p class="background-text text--color-grey-1">02</p>
+                </div>
+            </div>
+            <div class="entry entry--margin-bottom">
+                <div class="">
+                    <img class="icon icon--variant-medium" src="/assets/icons/location-alt.svg" />
+                </div>
+                <div class="data">
+                    <p class="title-4">Hotel Address</p>
+                    <p class="paragraph-1 text--color-grey-3">OXYGEN Workspace | Calle Princesa
+                        31,
+                        planta 2 28008 Madrid</p>
+                        <p class="background-text text--color-grey-1">03</p>
+                </div>
+            </div>
+    </section>
+
+    <section class="map">
+        <img src="/assets/empty.png" />
+    </section>
+
+    <section class="contact-form">
+        <form id="contact-form" class="form form--margin-top" action="contact.php" method="POST">
+            <div class="form-pair">
+                <label id="name-label" for="name">
+                    <input type="text" name="name" placeholder="Your full name" required />
+                </label>
+                <label id="phone-label" for="phone">
+                    <input type="text" name="phone" placeholder="Add phone number" required />
+                </label>
+            </div>
+            <div class="form-pair">
+                <label id="email-label" for="email">
+                    <input type="email" name="email" placeholder="Enter email address" required />
+                </label>
+                <label id="subject-label" for="phone">
+                    <input type="text" name="subject" placeholder="Enter subject" required />
+                </label>
+            </div>
+            <label id="msg-label" for="msg">
+                <textarea id="msg" rows="5" placeholder="Enter message" required></textarea>
+            </label>
+            <button type="submit" class="button button--variant-gold">SEND</button>
+        </form>
+
+        <!--div class="content">
+            <p class="text text--price-2 text--align-center">¡Thank you for your message!</p>
+            <p class="text text--paragraph-1 text--margin-top">
+                We have received it correctly. We will look into it very soon.
+            </p>
+            <p class="text text--paragraph-1">
+                The Miranda Hotel
+            </p>
+        </div-->
+    </section>
 @endsection
