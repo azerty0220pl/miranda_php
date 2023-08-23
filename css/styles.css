@@ -1136,5 +1136,28 @@ footer.background-black {
     grid-auto-rows: auto;
   }
 }
+@media only screen and (min-width: 1000px) {
+  .info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.map {
+  aspect-ratio: 16/9;
+}
+.map img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact-form .form-pair {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .contact-form .form-pair label {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
