@@ -13,14 +13,14 @@
 </section>
 
 <section class="availability">
-    <form id="contact-form" class="form form--color-dark">
+    <form id="contact-form" class="form form--color-dark" action="rooms.php" method="GET">
         <label id="from-label" for="name">
             <p class="text--color-white paragraph-2">Arrival Date</p>
-            <input type="date" id="from" />
+            <input type="date" name="from" required />
         </label>
         <label id="to-label" for="to">
             <p class="text--color-white paragraph-2">LeDeparture Date</p>
-            <input type="date" id="to" />
+            <input type="date" name="to" required />
         </label>
         <button type="submit" id="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
     </form>
