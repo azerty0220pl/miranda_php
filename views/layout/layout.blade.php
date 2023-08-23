@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
     <head lang="en">
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -6,7 +8,6 @@
         <link rel="icon" href="../assets/icons/logo.svg" />
         <title>Miranda @yield('title')</title>
     </head>
-
     <body>
         <header>
             <div class="header">
