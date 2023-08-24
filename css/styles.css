@@ -106,14 +106,14 @@ body {
     display: none !important;
   }
 }
-.text, .title-up, .title-5, .title-4, .title-3, .title-2, .title-1, .price-2, .price-1, .paragraph-2, .background-text, .paragraph-1, .form input::placeholder, .form textarea::placeholder, .pagination-text, .button-text, .button {
+.text, .title-up, .title-5, .title-4, .title-3, .title-2, .title-1, .price-2, .price-1, .paragraph-2, .background-text, .paragraph-1, .form input::placeholder, .form textarea::placeholder, .pagination-selected, .pagination-text, .button-text, .button {
   vertical-align: middle;
   margin: 0;
 }
 .text--size-1, .title-up, .paragraph-2, .background-text, .button-text, .button, .paragraph-1, .form input::placeholder, .form textarea::placeholder {
   font-size: 14px;
 }
-.text--size-2, .title-5 span, .price-2, .price-1 span, .pagination-text, .logo--size-small p {
+.text--size-2, .title-5 span, .price-2, .price-1 span, .pagination-selected, .pagination-text, .logo--size-small p {
   font-size: 16px;
 }
 .text--size-3, .title-4 {
@@ -137,7 +137,7 @@ body {
 .text--font-2, .title-up, .title-5, .price-2, .price-1, .paragraph-2, .background-text, .button-text, .button, .paragraph-1, .form input::placeholder, .form textarea::placeholder, .logo p {
   font-family: "Archivo";
 }
-.text--font-3, .pagination-text {
+.text--font-3, .pagination-selected, .pagination-text {
   font-family: "Oswald";
 }
 .text--color-white, .title-1, .button-text, .button {
@@ -155,7 +155,7 @@ body {
 .text--color-grey-4 {
   color: #333;
 }
-.text--color-grey-5, .link {
+.text--color-grey-5 {
   color: #222;
 }
 .text--color-gold {
@@ -182,7 +182,7 @@ body {
 .text--align-start {
   text-align: start;
 }
-.text--align-center, .pagination-text, .button-text, .button {
+.text--align-center, .pagination-selected, .pagination-text, .button-text, .button {
   text-align: center;
 }
 .text--align-end {
@@ -191,7 +191,7 @@ body {
 .text--weight-1, .title-4, .title-3, .title-2, .title-1, .paragraph-1, .form input::placeholder, .form textarea::placeholder, .logo p:last-of-type {
   font-weight: 400;
 }
-.text--weight-2, .title-up, .title-5, .price-2, .price-1, .paragraph-2, .background-text, .button-text, .button, .pagination-text, .logo p:first-of-type {
+.text--weight-2, .title-up, .title-5, .price-2, .price-1, .paragraph-2, .background-text, .button-text, .button, .pagination-selected, .pagination-text, .logo p:first-of-type {
   font-weight: 600;
 }
 
@@ -407,11 +407,38 @@ body {
   padding: 1.25rem !important;
 }
 .pagination-text {
-  width: 2rem !important;
-  height: 2rem !important;
-  margin: 0.25rem !important;
-  border-radius: 0 !important;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.25rem;
+  border-radius: 0;
+  background-color: #FCF9FF;
   line-height: 2rem;
+  color: #222;
+  text-decoration: none;
+}
+.pagination-text:hover {
+  background-color: #BEAD8E;
+  cursor: pointer;
+  color: #FCF9FF;
+}
+.pagination-selected {
+  width: 2rem;
+  height: 2rem;
+  margin: 0.25rem;
+  border-radius: 0;
+  background-color: #BEAD8E;
+  line-height: 2rem;
+  color: #FCF9FF;
+  text-decoration: none;
+}
+.pagination-selected:hover {
+  background-color: #FCF9FF;
+  cursor: pointer;
+  color: #222;
+}
+
+.price-wrong {
+  text-decoration-line: line-through;
 }
 
 .room {
@@ -1153,11 +1180,36 @@ footer.background-black {
   .contact-form .form-pair {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
   }
   .contact-form .form-pair label {
     width: 100%;
   }
+}
+.offer .offer_room .img {
+  width: 100%;
+  aspect-ratio: 2;
+}
+.offer .offer_room .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.offer .navigation_button {
+  background-color: #FCF9FF;
+  width: 2rem !important;
+  height: 2rem !important;
+  padding: 0.5rem !important;
+  bottom: 0.75rem;
+  right: 2rem;
+  z-index: 15;
+}
+.offer .navigation_button:hover {
+  background-color: #BEAD8E;
+  cursor: pointer;
+}
+.offer .navigation_button:hover path {
+  fill: #FCF9FF;
 }
 
 /*# sourceMappingURL=styles.css.map */
