@@ -50,22 +50,22 @@
         <form id="contact-form" class="form form--margin-top" action="contact.php" method="POST">
             <div class="form-pair">
                 <label id="name-label" for="name">
-                    <input type="text" name="name" placeholder="Your full name" required />
+                    <input type="text" id="name" name="name" placeholder="Your full name" required />
                 </label>
                 <label id="phone-label" for="phone">
-                    <input type="text" name="phone" placeholder="Add phone number" required />
+                    <input type="text" id="phone" name="phone" placeholder="Add phone number" required />
                 </label>
             </div>
             <div class="form-pair">
                 <label id="email-label" for="email">
-                    <input type="email" name="email" placeholder="Enter email address" required />
+                    <input type="email" id="email" name="email" placeholder="Enter email address" required />
                 </label>
                 <label id="subject-label" for="phone">
-                    <input type="text" name="subject" placeholder="Enter subject" required />
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject" required />
                 </label>
             </div>
             <label id="msg-label" for="msg">
-                <textarea id="msg" rows="5" placeholder="Enter message" required></textarea>
+                <textarea id="msg" name="msg" rows="5" placeholder="Enter message" required></textarea>
             </label>
             <button type="submit" class="button button--variant-gold">SEND</button>
         </form>

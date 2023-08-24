@@ -24,10 +24,10 @@
                     </div>
                 </div>
                 <div class="hidden--mobile menu-alt">
-                    <a class="link paragraph-2 text--color-grey5" href="/about.php">About Us</a>
-                    <a class="link paragraph-2 text--color-grey5" href="/rooms.php">Rooms</a>
-                    <a class="link paragraph-2 text--color-grey5" href="/offers.php">Offers</a>
-                    <a class="link paragraph-2 text--color-grey5" href="/contact.php">Contact</a>
+                    <a class="link paragraph-2 text--color-grey-5" href="/about.php">About Us</a>
+                    <a class="link paragraph-2 text--color-grey-5" href="/rooms.php">Rooms</a>
+                    <a class="link paragraph-2 text--color-grey-5" href="/offers.php">Offers</a>
+                    <a class="link paragraph-2 text--color-grey-5" href="/contact.php">Contact</a>
                 </div>
                 <div>
                     <button class="button">
@@ -39,10 +39,10 @@
                 </div>
             </div>
             <div class="menu hidden">
-                <a class="link paragraph-2 text--color-grey5" href="/about.php">About Us</a>
-                <a class="link paragraph-2 text--color-grey5" href="/rooms.php">Rooms</a>
-                <a class="link paragraph-2 text--color-grey5" href="/offers.php">Offers</a>
-                <a class="link paragraph-2 text--color-grey5" href="/contact.php">Contact</a>
+                <a class="link paragraph-2 text--color-grey-5" href="/about.php">About Us</a>
+                <a class="link paragraph-2 text--color-grey-5" href="/rooms.php">Rooms</a>
+                <a class="link paragraph-2 text--color-grey-5" href="/offers.php">Offers</a>
+                <a class="link paragraph-2 text--color-grey-5" href="/contact.php">Contact</a>
             </div>
             <script src="/js/menu-toggler.js"></script>
         </header>
