@@ -14,13 +14,13 @@
 
 <section class="availability">
     <form id="contact-form" class="form form--color-dark" action="rooms.php" method="GET">
-        <label id="from-label" for="name">
+        <label id="from-label" for="from">
             <p class="text--color-white paragraph-2">Arrival Date</p>
-            <input type="date" name="from" required />
+            <input type="date" id="from" name="from" required />
         </label>
         <label id="to-label" for="to">
             <p class="text--color-white paragraph-2">LeDeparture Date</p>
-            <input type="date" name="to" required />
+            <input type="date" id="to" name="to" required />
         </label>
         <button type="submit" id="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
     </form>
@@ -69,90 +69,35 @@
     <p class="title-2 text--align-center text--color-grey-5">Hand Picked Rooms</p>
     <div class="swiper rooms-swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
+        <?php 
+                while($row = $rooms->fetch_assoc()) {
+                    echo 
+                        '<div class="swiper-slide room">
+                            <div class="room-img">
+                                <img src="/assets/img/rooms.jpg" />
+                            </div>
+                            <div class="icons icons--margin-negative">
+                                <img class="icon" src="/assets/icons/bed.svg" />
+                                <img class="icon" src="/assets/icons/wifi.svg" />
+                                <img class="icon" src="/assets/icons/car.svg" />
+                                <img class="icon" src="/assets/icons/snow.svg" />
+                                <img class="icon" src="/assets/icons/strong.svg" />
+                                <img class="icon" src="/assets/icons/no-smoking.svg" />
+                                <img class="icon" src="/assets/icons/drink.svg" />
+                            </div>
+                            <div class="room-content">
+                                <p class="title-3 text--align-center text--color-grey-5">Room ' . $row["room_name"] . '</p>
+                                <p class="paragraph-1 text--align-center text--color-grey-3">' . $row["des"] . '
+                                </p>
+                                <div class="even-row">
+                                    <p class="price-2 text--color-gold text--align-center">$' . (string)($row["price"] * (1 - $row["offer"] / 100) / 100) . '/Night</p>
+                                    <a href="/details.php?id=' . $row["id"] . '" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>'
+                    ;
+                }
+            ?>
         </div>
 
         <svg viewBox="0 0 5 8" width="100" height="100" class="swiper-button-prev">
