@@ -8,68 +8,68 @@
     @section('welcome', 'Ultimate Room')
     @parent
     <section class="no-bottom">
-        <p class="title-up text--color-grey-3">DOUBLE BED</p>
-        <p class="title-2 text--color-grey-5">Luxury Double Bed</p>
-        <p class="price-1 text--color-gold">$345<span>/Night</span></p>
+        <?php 
+            if($room['room_type'] == 0)
+                echo '<p class="title-up text--color-grey-3">SINGLE BED</p>';
+            else if($room['room_type'] == 1)
+                echo '<p class="title-up text--color-grey-3">DOUBLE BED</p>';
+            else if($room['room_type'] == 2)
+                echo '<p class="title-up text--color-grey-3">DOUBLE SUPERIOR</p>';
+            else if($room['room_type'] == 3)
+                echo '<p class="title-up text--color-grey-3">SUITE</p>';
+        ?>
+        <p class="title-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
+        <p class="price-1 text--color-gold">$<?php echo (string)($room["price"] * (1 - $room["offer"] / 100) / 100); ?><span>/Night</span></p>
         <div class="card card--wide card--margin-top card--center">
             <div class="image full">
                 <img src="/assets/img/rooms.jpg" />
             </div>
-            <!--div class="content">
-                <p class="text text--price-2 text--align-center">Check Availability</p>
+            <div class="content">
+                <p class="price-2 text--align-center">Check Availability</p>
                 <form id="contact-form" class="form form--margin-top">
-                    <label id="from-label" for="name">
-                        <p class="text text--paragraph-2">Check In</p>
-                        <input type="date" id="from" />
+                    <label id="from-label" for="from">
+                        <p class="paragraph-2 text--color-grey-5">Check In</p>
+                        <input type="date" id="from" name="from" required />
                     </label>
                     <label id="to-label" for="to">
-                        <p class="text text--paragraph-2">Check Out</p>
-                        <input type="date" id="to" />
+                        <p class="paragraph-2 text--color-grey-5">Check Out</p>
+                        <input type="date" id="to" name="to" required />
                     </label>
                     <label id="name-label" for="name">
-                        <p class="text text--paragraph-2">Full Name</p>
-                        <input type="text" id="name" />
+                        <p class="paragraph-2 text--color-grey-5">Full Name</p>
+                        <input type="text" id="name" name="name" required />
                     </label>
                     <label id="email-label" for="email">
-                        <p class="text text--paragraph-2">Email</p>
-                        <input type="email" id="email" />
+                        <p class="paragraph-2 text--color-grey-5">Email</p>
+                        <input type="email" id="email" name="email" required />
                     </label>
                     <label id="phone-label" for="phone">
-                        <p class="text text--paragraph-2">Phone</p>
-                        <input type="text" id="phone" />
+                        <p class="paragraph-2 text--color-grey-5">Phone</p>
+                        <input type="text" id="phone" name="phone" required />
                     </label>
                     <label id="msg-label" for="msg">
-                        <p class="text text--paragraph-2">Message (Special Request)</p>
-                        <textarea id="msg" rows="5"></textarea>
+                        <p class="paragraph-2 text--color-grey-5">Message (Special Request)</p>
+                        <textarea id="msg" rows="5" name="msg" required></textarea>
                     </label>
                     <button type="submit" id="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
                 </form>
-            </div-->
-            <div class="content">
-                <p class="text text--price-2 text--align-center">¡Thank you for your request!</p>
-                <p class="text text--paragraph-1 text--margin-top">
+            </div>
+            <!--div class="content">
+                <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your request!</p>
+                <p class="paragraph-1 text--margin-top text--color-grey-5">
                     We have received it correctly. Someone from our Team will get back to you very soon.
                 </p>
-                <p class="text text--paragraph-1">
+                <p class="paragraph-1 text--color-grey-5">
                     The Miranda Hotel
                 </p>
-            </div>
+            </div-->
         </div>
     </section>
 
     <section class="no-bottom">
         <p class="text--color-grey-3 paragraph-1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-            in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-            inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
-            voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-            sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-            voluptatem.</p>
+            {{ $room["des"] }}
+        </p>
     </section>
 
     <section class="no-bottom">
@@ -188,99 +188,42 @@
 
     <section class="no-bottom">
         <p class="title-3">Cancellation</p>
-        <p class="paragraph-1 text--color-grey-3 text--margin-top">Phasellus volutpat neque a tellus venenatis, a euismod augue
-            facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed
-            eu dolor. Cancel up to 14 days to get a full refund.</p>
+        <p class="paragraph-1 text--color-grey-3 text--margin-top">{{ $room['cancel']}}</p>
     </section>
 
     <section>
         <p class="title-3 text--color-grey-5">Related Rooms</p>
         <div class="swiper rooms-swiper">
         <div class="swiper-wrapper">
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Monoplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Duplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Triplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
-            <div class="swiper-slide room">
-                <div class="room-img">
-                    <img src="/assets/img/rooms.jpg" />
-                </div>
-                <div class="icons icons--margin-negative">
-                    <img class="icon" src="/assets/icons/bed.svg" />
-                    <img class="icon" src="/assets/icons/wifi.svg" />
-                    <img class="icon" src="/assets/icons/car.svg" />
-                    <img class="icon" src="/assets/icons/snow.svg" />
-                    <img class="icon" src="/assets/icons/strong.svg" />
-                    <img class="icon" src="/assets/icons/no-smoking.svg" />
-                    <img class="icon" src="/assets/icons/drink.svg" />
-                </div>
-                <div class="room-content">
-                    <p class="title-3 text--align-center text--color-grey-5">Minimal Multiplex Room</p>
-                    <p class="paragraph-1 text--align-center text--color-grey-3">Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore.</p>
-                    <p class="price-1 text--color-gold text--align-center">$345<span>/Night</span></p>
-                </div>
-            </div>
+        <?php 
+                while($row = $rooms->fetch_assoc()) {
+                    echo 
+                        '<div class="swiper-slide room">
+                            <div class="room-img">
+                                <img src="/assets/img/rooms.jpg" />
+                            </div>
+                            <div class="icons icons--margin-negative">
+                                <img class="icon" src="/assets/icons/bed.svg" />
+                                <img class="icon" src="/assets/icons/wifi.svg" />
+                                <img class="icon" src="/assets/icons/car.svg" />
+                                <img class="icon" src="/assets/icons/snow.svg" />
+                                <img class="icon" src="/assets/icons/strong.svg" />
+                                <img class="icon" src="/assets/icons/no-smoking.svg" />
+                                <img class="icon" src="/assets/icons/drink.svg" />
+                            </div>
+                            <div class="room-content">
+                                <p class="title-3 text--align-center text--color-grey-5">Room ' . $row["room_name"] . '</p>
+                                <p class="paragraph-1 text--align-center text--color-grey-3">' . $row["des"] . '
+                                </p>
+                                <div class="even-row">
+                                    <p class="price-2 text--color-gold text--align-center">$' . (string)($row["price"] * (1 - $row["offer"] / 100) / 100) . '/Night</p>
+                                    <a href="/details.php?id=' . $row["id"] . '" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                                </div>
+                            </div>
+                        </div>'
+                    ;
+                }
+            ?>
         </div>
 
         <svg viewBox="0 0 5 8" width="100" height="100" class="swiper-button-prev">
