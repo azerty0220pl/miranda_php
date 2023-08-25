@@ -10,5 +10,5 @@ $count_res = ($count_res->fetch_assoc())['count'];
 
 $pages = ceil($count_res / 9);
 
-echo $blade->run('offers', ["rooms" => $result, "count" => $count_res, "page" => $page, "pages" => $pages]);
+echo $blade->run('offers', ["rooms" => $result, "page" => $page, "pages" => $pages]);
 ?>
