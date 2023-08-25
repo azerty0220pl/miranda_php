@@ -8,5 +8,7 @@ $count_res = $conn->query("SELECT COUNT('id') as 'count' FROM rooms");
 
 $count_res = ($count_res->fetch_assoc())['count'];
 
-echo $blade->run('rooms', ["rooms" => $result, "count" => $count_res, "page" => $page]);
+$pages = ceil($count_res / 9);
+
+echo $blade->run('rooms', ["rooms" => $result, "page" => $page, "pages" => $pages]);
 ?>
