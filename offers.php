@@ -4,7 +4,7 @@ require_once('./config.php');
 
 use eftec\bladeone\BladeOne;
 
-$page = (int)htmlspecialchars($_GET["page"]);
+$page = (int)$_GET["page"];
 $sql = "SELECT * FROM rooms WHERE offer != 0 ORDER BY id LIMIT 9 OFFSET " . 9 * $page . ";";
 $result = $conn->query($sql);
 $count_res = $conn->query("SELECT COUNT('id') as 'count' FROM rooms WHERE offer != 0");

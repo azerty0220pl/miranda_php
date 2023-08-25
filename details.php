@@ -4,7 +4,7 @@ require_once('./config.php');
 
 use eftec\bladeone\BladeOne;
 
-$id = (int)htmlspecialchars($_GET["id"]);
+$id = (int)$_GET["id"];
 $room = $conn->query("SELECT * FROM rooms WHERE id = " . (int)$id . ";");
 
 $room = $room->fetch_assoc();
