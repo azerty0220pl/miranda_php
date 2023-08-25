@@ -3,10 +3,15 @@
 @section('title', 'Offers')
 
 @section('content')
-    @extends('components.home')
-    @section('home')
-    @section('welcome', 'Our Offers')
-    @parent
+    <section class="home">
+        <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="title-1">Our Offers</p>
+        <div class="path">
+            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <p class="paragraph-2 link"> | </p>
+            <p class="paragraph-2 text--color-grey-5">Offers</p>
+        </div>
+    </section>
     <section class="offer">
         
     <?php 

@@ -3,10 +3,15 @@
 @section('title', 'About')
 
 @section('content')
-    @extends('components.home')
-    @section('home')
-    @section('welcome', 'About Us')
-    @parent
+    <section class="home">
+        <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="title-1">About Us</p>
+        <div class="path">
+            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <p class="paragraph-2 link"> | </p>
+            <p class="paragraph-2 text--color-grey-5">About</p>
+        </div>
+    </section>
     <section class="no-bottom">
         <div class="video">
             <video muted loop>

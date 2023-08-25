@@ -3,10 +3,15 @@
 @section('title', 'Details')
 
 @section('content')
-    @extends('components.home')
-    @section('home')
-    @section('welcome', 'Ultimate Room')
-    @parent
+    <section class="home">
+        <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
+        <p class="title-1">Ultimate Room</p>
+        <div class="path">
+            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <p class="paragraph-2 link"> | </p>
+            <p class="paragraph-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
+        </div>
+    </section>
     <section class="no-bottom">
         <?php 
             if($room['room_type'] == 0)
