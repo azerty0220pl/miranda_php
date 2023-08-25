@@ -13,18 +13,17 @@
         </div>
     </section>
     <section class="no-bottom">
-        <?php 
-            if($room['room_type'] == 0)
-                echo '<p class="title-up text--color-grey-3">SINGLE BED</p>';
-            else if($room['room_type'] == 1)
-                echo '<p class="title-up text--color-grey-3">DOUBLE BED</p>';
-            else if($room['room_type'] == 2)
-                echo '<p class="title-up text--color-grey-3">DOUBLE SUPERIOR</p>';
-            else if($room['room_type'] == 3)
-                echo '<p class="title-up text--color-grey-3">SUITE</p>';
-        ?>
+        @if($room['room_type'] == 0)
+            <p class="title-up text--color-grey-3">SINGLE BED</p>
+        @elseif($room['room_type'] == 1)
+            <p class="title-up text--color-grey-3">DOUBLE BED</p>
+        @elseif($room['room_type'] == 2)
+            <p class="title-up text--color-grey-3">DOUBLE SUPERIOR</p>
+        @elseif($room['room_type'] == 3)
+            <p class="title-up text--color-grey-3">SUITE</p>
+        @endif
         <p class="title-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
-        <p class="price-1 text--color-gold">$<?php echo (string)($room["price"] * (1 - $room["offer"] / 100) / 100); ?><span>/Night</span></p>
+        <p class="price-1 text--color-gold">${{ price($room["price"], $room["offer"]) }}<span>/Night</span></p>
         <div class="card card--wide card--margin-top card--center">
             <div class="image full">
                 <img src="/assets/img/rooms.jpg" />
@@ -200,35 +199,32 @@
         <p class="title-3 text--color-grey-5">Related Rooms</p>
         <div class="swiper rooms-swiper">
         <div class="swiper-wrapper">
-        <?php 
-                while($row = $rooms->fetch_assoc()) {
-                    echo 
-                        '<div class="swiper-slide room">
-                            <div class="room-img">
-                                <img src="/assets/img/rooms.jpg" />
+                @foreach($rooms as $row)
+                    <div class="swiper-slide room">
+                        <div class="room-img">
+                            <img src="/assets/img/rooms.jpg" />
+                        </div>
+                        <div class="icons icons--margin-negative">
+                            <img class="icon" src="/assets/icons/bed.svg" />
+                            <img class="icon" src="/assets/icons/wifi.svg" />
+                            <img class="icon" src="/assets/icons/car.svg" />
+                            <img class="icon" src="/assets/icons/snow.svg" />
+                            <img class="icon" src="/assets/icons/strong.svg" />
+                            <img class="icon" src="/assets/icons/no-smoking.svg" />
+                            <img class="icon" src="/assets/icons/drink.svg" />
+                        </div>
+                        <div class="room-content">
+                            <p class="title-3 text--align-center text--color-grey-5">Room {{ $row["room_name"] }}</p>
+                            <p class="paragraph-1 text--align-center text--color-grey-3">
+                                {{ $row["des"] }}
+                            </p>
+                            <div class="even-row">
+                                <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
+                                <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                             </div>
-                            <div class="icons icons--margin-negative">
-                                <img class="icon" src="/assets/icons/bed.svg" />
-                                <img class="icon" src="/assets/icons/wifi.svg" />
-                                <img class="icon" src="/assets/icons/car.svg" />
-                                <img class="icon" src="/assets/icons/snow.svg" />
-                                <img class="icon" src="/assets/icons/strong.svg" />
-                                <img class="icon" src="/assets/icons/no-smoking.svg" />
-                                <img class="icon" src="/assets/icons/drink.svg" />
-                            </div>
-                            <div class="room-content">
-                                <p class="title-3 text--align-center text--color-grey-5">Room ' . $row["room_name"] . '</p>
-                                <p class="paragraph-1 text--align-center text--color-grey-3">' . $row["des"] . '
-                                </p>
-                                <div class="even-row">
-                                    <p class="price-2 text--color-gold text--align-center">$' . (string)($row["price"] * (1 - $row["offer"] / 100) / 100) . '/Night</p>
-                                    <a href="/details.php?id=' . $row["id"] . '" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
-                                </div>
-                            </div>
-                        </div>'
-                    ;
-                }
-            ?>
+                        </div>
+                    </div>
+                @endforeach
         </div>
 
         <svg viewBox="0 0 5 8" width="100" height="100" class="swiper-button-prev">
