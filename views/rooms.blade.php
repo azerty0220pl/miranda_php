@@ -14,45 +14,41 @@
     </section>
     <section class="rooms">
         <div class="list">
-            <?php 
-                while($row = $rooms->fetch_assoc()) {
-                    echo 
-                        '<div class="room">
-                            <div class="room-img">
-                                <img src="/assets/img/rooms.jpg" />
+                @foreach ($rooms as $row) 
+                    <div class="room">
+                        <div class="room-img">
+                            <img src="/assets/img/rooms.jpg" />
+                        </div>
+                        <div class="icons icons--margin-negative">
+                            <img class="icon" src="/assets/icons/bed.svg" />
+                            <img class="icon" src="/assets/icons/wifi.svg" />
+                            <img class="icon" src="/assets/icons/car.svg" />
+                            <img class="icon" src="/assets/icons/snow.svg" />
+                            <img class="icon" src="/assets/icons/strong.svg" />
+                            <img class="icon" src="/assets/icons/no-smoking.svg" />
+                            <img class="icon" src="/assets/icons/drink.svg" />
+                        </div>
+                        <div class="room-content">
+                            <p class="title-3 text--align-center text--color-grey-5">Room {{ $row["room_name"] }}</p>
+                            <p class="paragraph-1 text--align-center text--color-grey-3">
+                                {{ $row["des"] }}
+                            </p>
+                            <div class="even-row">
+                                <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
+                                <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                             </div>
-                            <div class="icons icons--margin-negative">
-                                <img class="icon" src="/assets/icons/bed.svg" />
-                                <img class="icon" src="/assets/icons/wifi.svg" />
-                                <img class="icon" src="/assets/icons/car.svg" />
-                                <img class="icon" src="/assets/icons/snow.svg" />
-                                <img class="icon" src="/assets/icons/strong.svg" />
-                                <img class="icon" src="/assets/icons/no-smoking.svg" />
-                                <img class="icon" src="/assets/icons/drink.svg" />
-                            </div>
-                            <div class="room-content">
-                                <p class="title-3 text--align-center text--color-grey-5">Room ' . $row["room_name"] . '</p>
-                                <p class="paragraph-1 text--align-center text--color-grey-3">' . $row["des"] . '
-                                </p>
-                                <div class="even-row">
-                                    <p class="price-2 text--color-gold text--align-center">$' . (string)($row["price"] * (1 - $row["offer"] / 100) / 100) . '/Night</p>
-                                    <a href="/details.php?id=' . $row["id"] . '" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
-                                </div>
-                            </div>
-                        </div>'
-                    ;
-                }
-            ?>
+                        </div>
+                    </div>
+                @endforeach
             
         </div>
 
         <div class="even-row">
-            <?php
-                if($page == 0)
-                    echo '<a>';
-                else 
-                    echo '<a href="/rooms.php?page=' . $page - 1 . '">';
-            ?>
+            @if ($page == 0)
+                <a>
+            @else 
+                <a href="/offers.php?page={{ $page - 1 }}">
+            @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
                         d="M1.22794 5.00034L4.32594 1.85784C4.52144 1.66084 4.52144 1.34084 4.32594 1.14384C4.13044 0.946844 3.81394 0.946844 3.61894 1.14384L0.169443 4.64334C-0.0180574 4.83284 -0.0190574 5.16734 0.169443 5.35784L3.61944 8.85734C3.81444 9.05434 4.13144 9.05434 4.32644 8.85734C4.52194 8.66034 4.52194 8.34034 4.32644 8.14334L1.22794 5.00034Z"
@@ -62,22 +58,18 @@
                         fill="#000" />
                 </svg>
             </a>
-            <?php
-                $pages = ceil($count / 9);
-                for ($i = 1; $i <= $pages; $i++) {
-                    if ($i - 1 != $page)
-                        echo '<a href="/rooms.php?page=' . $i - 1 . '" class="pagination-text">' . $i . '</a>';
-                    else 
-                        echo '<a href="/rooms.php?page=' . $i - 1 . '" class="pagination-selected">' . $i . '</a>';
-                }
-            ?>
-            <?php
-                $pages = ceil($count / 9);
-                if($page == $pages - 1)
-                    echo '<a>';
-                else 
-                    echo '<a href="/rooms.php?page=' . $page + 1 . '">';
-            ?>
+            @for ($i = 1; $i <= $pages; $i++) 
+                @if ($i - 1 != $page)
+                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-text">{{ $i }}</a>
+                @else 
+                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-selected">{{ $i }}</a>
+                @endif
+            @endfor
+            @if ($page == $pages - 1)
+                <a>
+            @else 
+                <a href="/offers.php?page={{ $page + 1 }}">
+            @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
                         d="M6.77206 5.00034L3.67406 1.85784C3.47856 1.66084 3.47856 1.34084 3.67406 1.14384C3.86956 0.946844 4.18606 0.946844 4.38106 1.14384L7.83056 4.64334C8.01806 4.83284 8.01906 5.16734 7.83056 5.35784L4.38056 8.85734C4.18556 9.05434 3.86856 9.05434 3.67356 8.85734C3.47806 8.66034 3.47806 8.34034 3.67356 8.14334L6.77206 5.00034Z"
