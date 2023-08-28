@@ -52,6 +52,17 @@
     </section>
 
     <section class="contact-form">
+        @if ($post)
+        <div class="content">
+            <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your message!</p>
+            <p class="paragraph-1 text--align-center text--margin-top text--color-grey-5">
+                We have received it correctly. We will look into it very soon.
+            </p>
+            <p class="paragraph-1 text--align-center text--color-grey-5">
+                The Miranda Hotel
+            </p>
+        </div>
+        @else
         <form id="contact-form" class="form form--margin-top" action="contact.php" method="POST">
             <div class="form-pair">
                 <label id="name-label" for="name">
@@ -74,15 +85,6 @@
             </label>
             <button type="submit" class="button button--variant-gold">SEND</button>
         </form>
-
-        <!--div class="content">
-            <p class="text text--price-2 text--align-center">¡Thank you for your message!</p>
-            <p class="text text--paragraph-1 text--margin-top">
-                We have received it correctly. We will look into it very soon.
-            </p>
-            <p class="text text--paragraph-1">
-                The Miranda Hotel
-            </p>
-        </div-->
+        @endif
     </section>
 @endsection
