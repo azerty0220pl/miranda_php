@@ -28,9 +28,20 @@
             <div class="image full">
                 <img src="/assets/img/rooms.jpg" />
             </div>
+            @if($post)
+            <div class="content">
+                <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your request!</p>
+                <p class="paragraph-1 text--margin-top text--color-grey-5">
+                    We have received it correctly. Someone from our Team will get back to you very soon.
+                </p>
+                <p class="paragraph-1 text--color-grey-5">
+                    The Miranda Hotel
+                </p>
+            </div>
+            @else
             <div class="content">
                 <p class="price-2 text--align-center">Check Availability</p>
-                <form id="contact-form" class="form form--margin-top">
+                <form action="details.php?id={{$room['id']}}" method="POST" class="form form--margin-top">
                     <label id="from-label" for="from">
                         <p class="paragraph-2 text--color-grey-5">Check In</p>
                         <input type="date" id="from" name="from" required />
@@ -51,22 +62,14 @@
                         <p class="paragraph-2 text--color-grey-5">Phone</p>
                         <input type="text" id="phone" name="phone" required />
                     </label>
-                    <label id="msg-label" for="msg">
+                    <label id="msg-label" for="request">
                         <p class="paragraph-2 text--color-grey-5">Message (Special Request)</p>
-                        <textarea id="msg" rows="5" name="msg" required></textarea>
+                        <textarea id="request" rows="5" name="request" required></textarea>
                     </label>
-                    <button type="submit" id="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
+                    <button type="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
                 </form>
             </div>
-            <!--div class="content">
-                <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your request!</p>
-                <p class="paragraph-1 text--margin-top text--color-grey-5">
-                    We have received it correctly. Someone from our Team will get back to you very soon.
-                </p>
-                <p class="paragraph-1 text--color-grey-5">
-                    The Miranda Hotel
-                </p>
-            </div-->
+            @endif
         </div>
     </section>
 
