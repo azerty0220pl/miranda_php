@@ -15,13 +15,13 @@
                     <button class="button toggler hidden--desktop">
                         <img class="icon" src="/assets/icons/bars.svg" />
                     </button>
-                    <div class="logo logo--size-small">
+                    <a class="logo logo--size-small" href="/index.php">
                         <img src="/assets/icons/logo.svg" />
                         <div>
                             <p>HOTEL</p>
                             <p>MIRANDA</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="hidden--mobile menu-alt">
                     <a class="link paragraph-2 text--color-grey-5" href="/about.php">About Us</a>

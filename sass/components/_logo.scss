@@ -6,7 +6,7 @@
     }
 
     p {
-        @extend .text--font-2;
+        @extend .text--font-2, .text--color-grey-5;
 
         &:first-of-type {
             @extend .text--weight-2;
