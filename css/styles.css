@@ -1173,7 +1173,9 @@ footer.background-black {
   aspect-ratio: 16/9;
 }
 .map img {
+  height: 100%;
   width: 100%;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 1000px) {
