@@ -1188,6 +1188,9 @@ footer.background-black {
     width: 100%;
   }
 }
+.offer .offer_room {
+  margin-bottom: 2rem;
+}
 .offer .offer_room .img {
   width: 100%;
   aspect-ratio: 2;
