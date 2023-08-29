@@ -14,32 +14,32 @@
     </section>
     <section class="rooms">
         <div class="list">
-                @foreach ($rooms as $row) 
-                    <div class="room">
-                        <div class="room-img">
-                            <img src="/assets/img/rooms.jpg" />
-                        </div>
-                        <div class="icons icons--margin-negative">
-                            <img class="icon" src="/assets/icons/bed.svg" />
-                            <img class="icon" src="/assets/icons/wifi.svg" />
-                            <img class="icon" src="/assets/icons/car.svg" />
-                            <img class="icon" src="/assets/icons/snow.svg" />
-                            <img class="icon" src="/assets/icons/strong.svg" />
-                            <img class="icon" src="/assets/icons/no-smoking.svg" />
-                            <img class="icon" src="/assets/icons/drink.svg" />
-                        </div>
-                        <div class="room-content">
-                            <p class="title-3 text--align-center text--color-grey-5">Room {{ $row["room_name"] }}</p>
-                            <p class="paragraph-1 text--align-center text--color-grey-3">
-                                {{ $row["des"] }}
-                            </p>
-                            <div class="even-row">
-                                <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                                <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
-                            </div>
+            @foreach ($rooms as $row) 
+                <div class="room">
+                    <div class="room-img">
+                        <img src="/assets/img/rooms.jpg" />
+                    </div>
+                    <div class="icons icons--margin-negative">
+                        <img class="icon" src="/assets/icons/bed.svg" />
+                        <img class="icon" src="/assets/icons/wifi.svg" />
+                        <img class="icon" src="/assets/icons/car.svg" />
+                        <img class="icon" src="/assets/icons/snow.svg" />
+                        <img class="icon" src="/assets/icons/strong.svg" />
+                        <img class="icon" src="/assets/icons/no-smoking.svg" />
+                        <img class="icon" src="/assets/icons/drink.svg" />
+                    </div>
+                    <div class="room-content">
+                        <p class="title-3 text--align-center text--color-grey-5">Room {{ $row["room_name"] }}</p>
+                        <p class="paragraph-1 text--align-center text--color-grey-3">
+                            {{ $row["des"] }}
+                        </p>
+                        <div class="even-row">
+                            <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
+                            <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                         </div>
                     </div>
-                @endforeach
+                </div>
+            @endforeach
             
         </div>
 
@@ -47,7 +47,7 @@
             @if ($page == 0)
                 <a>
             @else 
-                <a href="/offers.php?page={{ $page - 1 }}">
+                <a href="/rooms.php?page={{ $page - 1 }}&from={{ $from }}&to={{ $to }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
@@ -60,15 +60,15 @@
             </a>
             @for ($i = 1; $i <= $pages; $i++) 
                 @if ($i - 1 != $page)
-                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-text">{{ $i }}</a>
+                    <a href="/rooms.php?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-text">{{ $i }}</a>
                 @else 
-                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-selected">{{ $i }}</a>
+                    <a href="/rooms.php?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-selected">{{ $i }}</a>
                 @endif
             @endfor
             @if ($page == $pages - 1)
                 <a>
             @else 
-                <a href="/offers.php?page={{ $page + 1 }}">
+                <a href="/rooms.php?page={{ $page + 1 }}&from={{ $from }}&to={{ $to }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
