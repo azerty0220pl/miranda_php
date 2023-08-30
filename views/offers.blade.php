@@ -42,71 +42,73 @@
                         @endif
                         <p class="title-2 text--color-grey-5">Room {{ $row["room_name"] }}</p>
                     </div>
-                    <p class="paragraph-1 text--color-grey-3">
-                        {{ $row["des"] }}
-                    </p>
-                    <div class="row">
-                        <div class="column">
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/air-conditioner.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Air Conditioner</p>
+                    <div class="offer_content_body">
+                        <p class="paragraph-1 text--color-grey-3">
+                            {{ $row["des"] }}
+                        </p>
+                        <div class="row">
+                            <div class="column">
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/air-conditioner.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Air Conditioner</p>
+                                    </div>
+                                </div>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/plate.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Breakfast</p>
+                                    </div>
+                                </div>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/clean.svg" alt="" />
+                                    <div class="data">
+                                        <p class="tparagraph-1 text--color-grey-3">Cleaning</p>
+                                    </div>
+                                </div>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/buy.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Grocery</p>
+                                    </div>
+                                </div>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/shop.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Shop Near</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/plate.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Breakfast</p>
+                            <div class="column">
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/wifi-alt.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">High Speed WiFi</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/clean.svg" alt="" />
-                                <div class="data">
-                                    <p class="tparagraph-1 text--color-grey-3">Cleaning</p>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/kitchen.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Kitchen</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/buy.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Grocery</p>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/bath.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Shower</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/shop.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Shop Near</p>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/bed-alt.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Single Bed</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="column">
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/wifi-alt.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">High Speed WiFi</p>
-                                </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/kitchen.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Kitchen</p>
-                                </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/bath.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Shower</p>
-                                </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/bed-alt.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Single Bed</p>
-                                </div>
-                            </div>
-                            <div class="entry entry--padding-small">
-                                <img src="./assets/icons/towel.svg" alt="" />
-                                <div class="data">
-                                    <p class="paragraph-1 text--color-grey-3">Towels</p>
+                                <div class="entry entry--padding-small">
+                                    <img src="./assets/icons/towel.svg" alt="" />
+                                    <div class="data">
+                                        <p class="paragraph-1 text--color-grey-3">Towels</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

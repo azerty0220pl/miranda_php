@@ -1200,6 +1200,13 @@ footer.background-black {
   width: 100%;
   object-fit: cover;
 }
+.offer .offer_content {
+  padding: 2rem;
+}
+.offer .offer_content .prices {
+  margin-top: -6rem;
+  margin-bottom: 2rem;
+}
 .offer .navigation_button {
   background-color: #FCF9FF;
   width: 2rem !important;
@@ -1215,6 +1222,30 @@ footer.background-black {
 }
 .offer .navigation_button:hover path {
   fill: #FCF9FF;
+}
+
+@media only screen and (min-width: 1000px) {
+  .offer .offer_content {
+    position: relative;
+    width: 90%;
+    background-color: #FCF9FF;
+    margin: auto;
+    margin-top: -5rem;
+    padding-top: 4rem;
+    border-top: 2px solid #BEAD8E;
+  }
+  .offer .offer_content .prices {
+    margin: 0;
+  }
+  .offer .offer_content .titles {
+    margin-top: -5rem;
+  }
+  .offer .offer_content_body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid #C2C2C2;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
