@@ -1287,7 +1287,7 @@ footer.background-black {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: -4rem;
+    margin-bottom: -6rem;
     z-index: 10;
     padding-right: 2rem;
   }
