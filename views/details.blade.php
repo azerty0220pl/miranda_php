@@ -12,65 +12,67 @@
             <p class="paragraph-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
         </div>
     </section>
-    <section class="no-bottom">
-        @if($room['room_type'] == 0)
-            <p class="title-up text--color-grey-3">SINGLE BED</p>
-        @elseif($room['room_type'] == 1)
-            <p class="title-up text--color-grey-3">DOUBLE BED</p>
-        @elseif($room['room_type'] == 2)
-            <p class="title-up text--color-grey-3">DOUBLE SUPERIOR</p>
-        @elseif($room['room_type'] == 3)
-            <p class="title-up text--color-grey-3">SUITE</p>
-        @endif
-        <p class="title-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
-        <p class="price-1 text--color-gold">${{ price($room["price"], $room["offer"]) }}<span>/Night</span></p>
-        <div class="card card--wide card--margin-top card--center">
-            <div class="image full">
-                <img src="/assets/img/rooms.jpg" />
+    <section class="main no-bottom">
+        <div class="details-header">
+            <div class="details-titles">
+                @if($room['room_type'] == 0)
+                    <p class="title-up text--color-grey-3">SINGLE BED</p>
+                @elseif($room['room_type'] == 1)
+                    <p class="title-up text--color-grey-3">DOUBLE BED</p>
+                @elseif($room['room_type'] == 2)
+                    <p class="title-up text--color-grey-3">DOUBLE SUPERIOR</p>
+                @elseif($room['room_type'] == 3)
+                    <p class="title-up text--color-grey-3">SUITE</p>
+                @endif
+                <p class="title-2 text--color-grey-5">Room {{ $room["room_name"] }}</p>
             </div>
-            @if($post)
-            <div class="content">
-                <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your request!</p>
-                <p class="paragraph-1 text--margin-top text--color-grey-5">
-                    We have received it correctly. Someone from our Team will get back to you very soon.
-                </p>
-                <p class="paragraph-1 text--color-grey-5">
-                    The Miranda Hotel
-                </p>
-            </div>
-            @else
-            <div class="content">
-                <p class="price-2 text--align-center">Check Availability</p>
-                <form action="details.php?id={{$room['id']}}" method="POST" class="form form--margin-top">
-                    <label id="from-label" for="from">
-                        <p class="paragraph-2 text--color-grey-5">Check In</p>
-                        <input type="date" id="from" name="from" required />
-                    </label>
-                    <label id="to-label" for="to">
-                        <p class="paragraph-2 text--color-grey-5">Check Out</p>
-                        <input type="date" id="to" name="to" required />
-                    </label>
-                    <label id="name-label" for="name">
-                        <p class="paragraph-2 text--color-grey-5">Full Name</p>
-                        <input type="text" id="name" name="name" required />
-                    </label>
-                    <label id="email-label" for="email">
-                        <p class="paragraph-2 text--color-grey-5">Email</p>
-                        <input type="email" id="email" name="email" required />
-                    </label>
-                    <label id="phone-label" for="phone">
-                        <p class="paragraph-2 text--color-grey-5">Phone</p>
-                        <input type="text" id="phone" name="phone" required />
-                    </label>
-                    <label id="msg-label" for="request">
-                        <p class="paragraph-2 text--color-grey-5">Message (Special Request)</p>
-                        <textarea id="request" rows="5" name="request" required></textarea>
-                    </label>
-                    <button type="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
-                </form>
-            </div>
-            @endif
+            <p class="price-1 text--color-gold">${{ price($room["price"], $room["offer"]) }}<span>/Night</span></p>
         </div>
+        <div class="image">
+            <img src="/assets/img/rooms.jpg" />
+        </div>
+        @if($post)
+        <div class="form">
+            <p class="price-2 text--align-center text--color-grey-5">¡Thank you for your request!</p>
+            <p class="paragraph-1 text--margin-top text--color-grey-5">
+                We have received it correctly. Someone from our Team will get back to you very soon.
+            </p>
+            <p class="paragraph-1 text--color-grey-5">
+                The Miranda Hotel
+            </p>
+        </div>
+        @else
+        <div class="form">
+            <p class="price-2 text--align-center">Check Availability</p>
+            <form action="details.php?id={{$room['id']}}" method="POST" class="form form--margin-top">
+                <label id="from-label" for="from">
+                    <p class="paragraph-2 text--color-grey-5">Check In</p>
+                    <input type="date" id="from" name="from" required />
+                </label>
+                <label id="to-label" for="to">
+                    <p class="paragraph-2 text--color-grey-5">Check Out</p>
+                    <input type="date" id="to" name="to" required />
+                </label>
+                <label id="name-label" for="name">
+                    <p class="paragraph-2 text--color-grey-5">Full Name</p>
+                    <input type="text" id="name" name="name" required />
+                </label>
+                <label id="email-label" for="email">
+                    <p class="paragraph-2 text--color-grey-5">Email</p>
+                    <input type="email" id="email" name="email" required />
+                </label>
+                <label id="phone-label" for="phone">
+                    <p class="paragraph-2 text--color-grey-5">Phone</p>
+                    <input type="text" id="phone" name="phone" required />
+                </label>
+                <label id="msg-label" for="request">
+                    <p class="paragraph-2 text--color-grey-5">Message (Special Request)</p>
+                    <textarea id="request" rows="5" name="request" required></textarea>
+                </label>
+                <button type="submit" class="button button--variant-gold">CHECK AVAILABILITY</button>
+            </form>
+        </div>
+        @endif
     </section>
 
     <section class="no-bottom">
@@ -178,14 +180,14 @@
     </section>
 
     <section class="no-bottom">
-        <div class="card card--center">
-            <div class="image image--rounded">
+        <div class="rosalina card card--direction-column card--gap-2">
+            <div class="image">
                 <img src="/assets/empty.png" />
                 <img class="tick" src="/assets/icons/tick.svg" />
             </div>
-            <div class="content">
+            <div class="card card--direction-column card--gap-2">
                 <p class="title-3 text--align-center text--color-grey-5">Rosalina D. Williams</p>
-                <p class="title-up text--align-center text--color-grey-5">FOUNDER, QUX CO.</p>
+                <p class="title-up text--align-center text--color-gold">FOUNDER, QUX CO.</p>
                 <p class="paragraph-1 text--color-grey-3 text--align-center">Lorem ipsum dolor sit amet,
                     consectetur adipisicing
                     elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
