@@ -44,7 +44,7 @@
         @else
         <div class="form">
             <p class="price-2 text--align-center">Check Availability</p>
-            <form action="details?id={{$room['id']}}" method="POST" class="form form--margin-top">
+            <form action="details?id={{ $room['id'] }}" method="POST" class="form form--margin-top">
                 <label id="from-label" for="from">
                     <p class="paragraph-2 text--color-grey-5">Check In</p>
                     <input type="date" id="from" name="from" required />
