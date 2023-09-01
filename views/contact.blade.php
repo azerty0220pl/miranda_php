@@ -7,7 +7,7 @@
         <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
         <p class="title-1">New Details</p>
         <div class="path">
-            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <a class="paragraph-2 link text--color-grey-5" href="/index">Home</a>
             <p class="paragraph-2 link"> | </p>
             <p class="paragraph-2 text--color-grey-5">Contact</p>
         </div>
@@ -63,7 +63,7 @@
             </p>
         </div>
         @else
-        <form id="contact-form" class="form form--margin-top" action="contact.php" method="POST">
+        <form id="contact-form" class="form form--margin-top" action="contact" method="POST">
             <div class="form-pair">
                 <label id="name-label" for="name">
                     <input type="text" id="name" name="name" placeholder="Your full name" required />

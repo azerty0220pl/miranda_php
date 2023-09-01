@@ -13,7 +13,7 @@
 </section>
 
 <section class="availability">
-    <form id="contact-form" class="form form--color-dark" action="rooms.php" method="GET">
+    <form id="contact-form" class="form form--color-dark" action="rooms" method="GET">
         <label id="from-label" for="from">
             <p class="text--color-white paragraph-2">Arrival Date</p>
             <input type="date" id="from" name="from" required />
@@ -90,7 +90,7 @@
                         </p>
                         <div class="even-row">
                             <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                            <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                            <a href="/details?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@
         <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
         <p class="title-1">Our Offers</p>
         <div class="path">
-            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <a class="paragraph-2 link text--color-grey-5" href="/index">Home</a>
             <p class="paragraph-2 link"> | </p>
             <p class="paragraph-2 text--color-grey-5">Offers</p>
         </div>
@@ -114,7 +114,7 @@
                         </div>
                     </div>
 
-                    <a href="/details.php?id={{ $row['id'] }}" class="button button--variant-gold link">BOOK NOW</a>
+                    <a href="/details?id={{ $row['id'] }}" class="button button--variant-gold link">BOOK NOW</a>
                 </div>
             </div>
         @endforeach
@@ -122,7 +122,7 @@
             @if ($page == 0)
                 <a>
             @else 
-                <a href="/offers.php?page={{ $page - 1 }}">
+                <a href="/offers?page={{ $page - 1 }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
@@ -135,15 +135,15 @@
             </a>
             @for ($i = 1; $i <= $pages; $i++) 
                 @if ($i - 1 != $page)
-                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-text">{{ $i }}</a>
+                    <a href="/offers?page={{ $i - 1 }}" class="pagination-text">{{ $i }}</a>
                 @else 
-                    <a href="/offers.php?page={{ $i - 1 }}" class="pagination-selected">{{ $i }}</a>
+                    <a href="/offers?page={{ $i - 1 }}" class="pagination-selected">{{ $i }}</a>
                 @endif
             @endfor
             @if ($page == $pages - 1)
                 <a>
             @else 
-                <a href="/offers.php?page={{ $page + 1 }}">
+                <a href="/offers?page={{ $page + 1 }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path

@@ -7,7 +7,7 @@
         <p class="title-up text--color-white">THE ULTIMATE LUXURY EXPERIENCE</p>
         <p class="title-1">Ultimate Rooms</p>
         <div class="path">
-            <a class="paragraph-2 link text--color-grey-5" href="/index.php">Home</a>
+            <a class="paragraph-2 link text--color-grey-5" href="/index">Home</a>
             <p class="paragraph-2 link"> | </p>
             <p class="paragraph-2 text--color-grey-5">Rooms</p>
         </div>
@@ -35,7 +35,7 @@
                         </p>
                         <div class="even-row">
                             <p class="price-2 text--color-gold text--align-center">${{ price($row["price"], $row["offer"]) }}/Night</p>
-                            <a href="/details.php?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
+                            <a href="/details?id={{ $row['id'] }}" class="price-2 text--color-grey-2 text--align-center link">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
             @if ($page == 0)
                 <a>
             @else 
-                <a href="/rooms.php?page={{ $page - 1 }}&from={{ $from }}&to={{ $to }}">
+                <a href="/rooms?page={{ $page - 1 }}&from={{ $from }}&to={{ $to }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
@@ -60,15 +60,15 @@
             </a>
             @for ($i = 1; $i <= $pages; $i++) 
                 @if ($i - 1 != $page)
-                    <a href="/rooms.php?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-text">{{ $i }}</a>
+                    <a href="/rooms?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-text">{{ $i }}</a>
                 @else 
-                    <a href="/rooms.php?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-selected">{{ $i }}</a>
+                    <a href="/rooms?page={{ $i - 1 }}&from={{ $from }}&to={{ $to }}" class="pagination-selected">{{ $i }}</a>
                 @endif
             @endfor
             @if ($page == $pages - 1)
                 <a>
             @else 
-                <a href="/rooms.php?page={{ $page + 1 }}&from={{ $from }}&to={{ $to }}">
+                <a href="/rooms?page={{ $page + 1 }}&from={{ $from }}&to={{ $to }}">
             @endif
                 <svg viewBox="0 0 8 10" width="100" height="100" class="navigation_button">
                     <path
